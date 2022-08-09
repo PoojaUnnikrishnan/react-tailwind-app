@@ -1,9 +1,10 @@
 import "./App.css";
+import Step1 from "./components/Step1";
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <Step1 />
     </div>
   );
 }
