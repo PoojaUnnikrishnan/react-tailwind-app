@@ -12,7 +12,7 @@ const Step1 = () => {
         <div className="font-bold flex justify-center px-5 text-3xl">
           <h2>Welcome! First things first...</h2>
         </div>
-        <div className="p-3  flex justify-center text-md text-gray-800 ">
+        <div className="p-3  flex justify-center text-md text-gray-500 ">
           <p>You can always change them later</p>
         </div>
         <div className=" p-5">
@@ -23,7 +23,7 @@ const Step1 = () => {
               placeholder="Steve Jobs"
             />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col py-2">
             <label className="text-left py-1 text-sm">Display Name</label>
             <input
               className="border p-2 text-sm rounded-sm"
