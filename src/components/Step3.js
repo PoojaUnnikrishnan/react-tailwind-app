@@ -1,28 +1,22 @@
 import React from "react";
-import Button from "./Button";
-import Logo from "./Logo";
-import ProgressBar from "./ProgressBar";
 
 const Step3 = () => {
   return (
-    <div className="h-screen flex justify-center items-center border-8">
-      <div className="flex flex-col p-10">
-        <Logo />
-        <ProgressBar />
-        <div className="font-bold text-3xl flex justify-center">
-          <h2>How are you planning to use Eden?</h2>
-        </div>
-        <div className="text-md flex justify-center p-3 text-gray-500">
-          <p>We'll streamline your setup experience accordingly.</p>
-        </div>
-        <div className="border-4">
-          <div className="border-4 p-20">
-            <div className="flex justify-between items-center gap-20">
-              <div className="border py-10 px-5 rounded-md">
+    <>
+      <div className="font-bold text-3xl flex justify-center">
+        <h2>How are you planning to use Eden?</h2>
+      </div>
+      <div className="text-md flex justify-center p-3 text-gray-500 ">
+        <p>We'll streamline your setup experience accordingly.</p>
+      </div>
+      <div className="flex justify-center">
+          <div className="pt-10">
+            <div className="flex gap-4 px-10 justify-evenly">
+              <div className="border rounded-md p-5 hover:border-indigo-500">
                 <div className="py-1">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 fill-indigo-500"
+                    className="h-5 w-5  hover:fill-indigo-500"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -33,18 +27,18 @@ const Step3 = () => {
                     />
                   </svg>
                 </div>
-                <div className="font-bold text-left">
+                <div className="font-bold text-left ">
                   <p>For myself</p>
                 </div>
-                <div className="text-left text-sm">
+                <div className="text-left text-sm flex-wrap w-32">
                   <p>Write better. Think more clearly. Stay organized.</p>
                 </div>
               </div>
-              <div className="border py-10 px-5 rounded-md">
+              <div className="border rounded-md p-5 hover:border-indigo-500">
                 <div className="py-1">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
+                    class="h-5 w-5 hover:fill-indigo-500"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -54,18 +48,14 @@ const Step3 = () => {
                 <div className="font-bold text-left">
                   <p> With my team</p>
                 </div>
-                <div className="text-left text-sm">
+                <div className="text-left text-sm flex-wrap w-32">
                   <p>Wikis, docs, tasks & projects, all in one place.</p>
                 </div>
               </div>
             </div>
-            <div className="flex  justify-center border">
-              <Button />
-            </div>
           </div>
-        </div>
       </div>
-    </div>
+    </>
   );
 };
 
